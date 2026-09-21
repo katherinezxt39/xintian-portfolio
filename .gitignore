@@ -1,2 +1,2 @@
 .sites-runtime/
-site-package.tgz
+site-package*.tgz
