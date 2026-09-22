@@ -27,7 +27,7 @@
         ripple.style.setProperty('--y', `${y}px`);
         ripple.style.setProperty('--turn', `${ring * 13 - 18}deg`);
         ripple.style.setProperty('--spread', `${(radius / 24) * (1 + ring * .14)}`);
-        ripple.style.setProperty('--delay', `${ring * 70}ms`);
+        ripple.style.setProperty('--delay', `${ring * 45}ms`);
         transition.appendChild(ripple);
       }
 
@@ -43,12 +43,12 @@
         leaf.style.setProperty('--size', `${18 + Math.random() * 32}px`);
         leaf.style.setProperty('--start', `${angle * 180 / Math.PI - 35}deg`);
         leaf.style.setProperty('--end', `${angle * 180 / Math.PI + 110 + Math.random() * 90}deg`);
-        leaf.style.setProperty('--delay', `${50 + Math.random() * 250}ms`);
+        leaf.style.setProperty('--delay', `${20 + Math.random() * 120}ms`);
         transition.appendChild(leaf);
       }
 
       transition.classList.add('is-active');
-      window.setTimeout(() => window.location.assign(destination), 1580);
+      window.setTimeout(() => window.location.assign(destination), 880);
     });
   }
 
@@ -57,9 +57,9 @@
   if (!canTrail || !garden) return;
 
   const images = [
-    'assets/meadow-planner.png',
-    'assets/campaign-camera.png',
-    'assets/creative-still-life.png'
+    'assets/trail-flower.png',
+    'assets/trail-mushroom.png',
+    'assets/trail-berries.png'
   ];
   let last = { x: innerWidth / 2, y: innerHeight / 2, t: performance.now() };
   let distanceBank = 0;
