@@ -39,11 +39,11 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .name-paper::before { content: none; }
 .name-paper > p, .name-paper > h1, .name-paper > .entry-label { position: relative; top: 95px; }
 .name-paper p { margin: 0 0 1.1rem; color: rgba(34,48,42,.82); font: 700 .67rem Arial, sans-serif; letter-spacing: .16em; text-transform: uppercase; opacity: .88; mix-blend-mode: multiply; }
-.identity-line { top: 100px !important; display: flex; align-items: center; justify-content: center; gap: clamp(2rem, 3.5vw, 3.2rem); white-space: nowrap; }
+.identity-line { top: 100px !important; z-index: 3; display: flex; align-items: center; justify-content: center; width: min(590px, 92vw); gap: clamp(6rem, 12vw, 9rem); white-space: nowrap; }
 .name-paper h1 { margin: 0; font: 600 clamp(4.5rem, 7.5vw, 7.5rem)/.66 var(--hand); letter-spacing: -.055em; color: rgba(34,48,42,.9); rotate: -2.5deg; opacity: .9; mix-blend-mode: multiply; filter: blur(.12px); text-shadow: none; }
 .name-paper h1 span { display: block; }
 .name-paper h1 span:last-child { margin-left: .5em; }
-.entry-label { margin-top: 2rem; border-bottom: 1px solid currentColor; color: rgba(34,48,42,.84); font: italic 1.18rem var(--serif); mix-blend-mode: multiply; }
+.entry-label { left: 14px; margin-top: 2rem; border-bottom: 1px solid currentColor; color: rgba(34,48,42,.84); font: italic 1.28rem var(--serif); mix-blend-mode: multiply; }
 .name-paper:focus-visible { outline: 2px solid var(--blue-dark); outline-offset: 7px; }
 .cursor-invite { position: absolute; z-index: 3; bottom: 16px; right: 2vw; margin: 0; padding: .35rem .65rem; background: rgba(238,231,216,.78); font-size: .78rem; font-style: italic; }
 
@@ -120,7 +120,8 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
   .reference-hero::before { inset: 68px 0 0; }
   .name-paper { width: min(82vw,500px); height: min(82vw,500px); padding: 3rem 1.5rem 2.25rem; }
   .name-paper > p, .name-paper > h1, .name-paper > .entry-label { top: 52px; }
-  .identity-line { top: 58px !important; gap: 1rem; font-size: .58rem !important; }
+  .identity-line { top: 58px !important; width: min(92vw, 390px); gap: 2.25rem; font-size: .58rem !important; }
+  .entry-label { left: 8px; font-size: 1.12rem; }
   .name-paper h1 { font-size: clamp(3.4rem,15vw,5.2rem); }
   .cursor-invite { display: none; }
   .inner-page { padding-top: 110px; }
