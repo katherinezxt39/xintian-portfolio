@@ -79,10 +79,14 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .work-menu-page { overflow: hidden; background: var(--yellow); }
 .work-menu { min-height: 100svh; padding-top: 80px; display: grid; place-items: center; overflow: hidden; background: var(--yellow); }
 .work-scene { position: relative; width: min(100vw, calc((100svh - 80px) * 1.74)); aspect-ratio: 1918 / 1102; max-height: calc(100svh - 80px); }
-.work-scene > img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.work-choice { position: absolute; z-index: 2; display: flex; align-items: flex-end; justify-content: center; padding: 0 0 3%; color: var(--ink); text-decoration: none; border: 1px solid transparent; transition: background .25s ease, border-color .25s ease; }
-.work-choice span { padding: .48rem .85rem; border: 1px solid rgba(38,63,55,.42); background: rgba(250,218,130,.9); box-shadow: 0 5px 16px rgba(65,55,31,.12); font: 700 .72rem/1 Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; white-space: nowrap; }
-.work-choice:hover, .work-choice:focus-visible { border-color: rgba(38,63,55,.35); background: linear-gradient(to bottom, transparent 60%, rgba(250,218,130,.2)); outline: none; }
+.work-background { display: block; width: 100%; height: 100%; object-fit: contain; -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 13%, #000 86%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0%, #000 13%, #000 86%, transparent 100%); }
+.work-choice { position: absolute; z-index: 2; display: block; color: var(--ink); text-decoration: none; outline: none; }
+.work-girl-cutout { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0; pointer-events: none; transform: translateY(0) scale(1); filter: drop-shadow(0 0 0 rgba(38,63,55,0)); transition: opacity .22s ease, transform .32s cubic-bezier(.2,.72,.2,1), filter .32s ease; }
+.work-choice:hover .work-girl-cutout, .work-choice:focus-visible .work-girl-cutout { opacity: 1; transform: translateY(-7px) scale(1.018); filter: drop-shadow(0 13px 10px rgba(38,63,55,.34)) drop-shadow(0 3px 2px rgba(255,250,220,.72)); }
+.work-label { position: absolute; left: 50%; z-index: 4; width: clamp(138px, 13vw, 198px); aspect-ratio: 2.8 / 1; display: grid; place-items: center; padding: 0 1.15rem; background: url("assets/work-label-floral-frame-v2.png") center / contain no-repeat; transform: translateX(-50%); color: #253d38; font: italic 600 clamp(.95rem,1.3vw,1.28rem)/1.05 var(--serif); letter-spacing: .015em; text-align: center; white-space: nowrap; text-shadow: 0 1px rgba(255,248,222,.75); }
+.work-choice-film .work-label { top: -7%; }
+.work-choice-design .work-label { top: -12%; }
+.work-choice-animation .work-label { top: -10.5%; font-size: clamp(.82rem,1.05vw,.94rem); line-height: .88; white-space: normal; }
 .work-choice-film { left: 11.5%; top: 9%; width: 20.5%; height: 87%; }
 .work-choice-design { left: 38%; top: 13%; width: 21%; height: 84%; }
 .work-choice-animation { left: 72.5%; top: 12%; width: 20%; height: 85%; }
@@ -139,7 +143,8 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
   .reference-hero::before { inset: 68px 0 0; }
   .work-menu { min-height: 100svh; padding-top: 68px; }
   .work-scene { width: 100vw; max-height: calc(100svh - 68px); }
-  .work-choice span { padding: .38rem .48rem; font-size: .56rem; letter-spacing: .05em; }
+  .work-label { width: clamp(100px,25vw,150px); padding: 0 .7rem; font-size: clamp(.68rem,2.4vw,.88rem); }
+  .work-choice-animation .work-label { font-size: clamp(.58rem,2vw,.76rem); }
   .name-paper { width: min(82vw,500px); height: min(82vw,500px); padding: 3rem 1.5rem 2.25rem; }
   .name-paper > p, .name-paper > h1, .name-paper > .entry-label { top: 52px; }
   .identity-line { top: 58px !important; width: min(92vw, 390px); gap: 2.25rem; font-size: .58rem !important; }
