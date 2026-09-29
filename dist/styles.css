@@ -55,7 +55,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .about-page { line-height: 1.5; }
 .about-page .inner-page { padding-top: 112px; }
 .about-page-title { padding: 1rem 0 .65rem; border-bottom: 0; }
-.about-layout { max-width: 1160px; padding: clamp(2.25rem,3.5vw,3.5rem) 0 clamp(2rem,3vw,3rem); display: flow-root; }
+.about-layout { max-width: 1160px; padding: clamp(3.5rem,5vw,5rem) 0 clamp(2rem,3vw,3rem); display: flow-root; }
 .about-copy p { margin: 0 0 1rem; font-size: clamp(.98rem,1.25vw,1.08rem); line-height: 1.55; }
 .about-copy p:last-child { margin-bottom: 0; }
 .project-copy .lead { font-size: clamp(1.35rem, 2.2vw, 2rem); line-height: 1.38; }
@@ -68,7 +68,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .education-heading { position: relative; min-height: 46px; padding: 0 0 .7rem; border-bottom: 1px solid var(--line); }
 .education-heading h2 { margin: 0; font-family: Baskerville, "Iowan Old Style", Georgia, serif; font-size: clamp(1.5rem,2.4vw,2.5rem); font-weight: 600; line-height: .95; letter-spacing: -.035em; }
 .education-entries article { display: grid; grid-template-columns: minmax(145px,210px) minmax(0,1fr); gap: clamp(2rem,5vw,5rem); padding: clamp(1.15rem,1.7vw,1.75rem) 0; }
-.education-panel + .image-divider { margin-top: clamp(2rem,3vw,3rem); margin-bottom: clamp(2rem,3vw,3rem); }
+.three-notes + .image-divider { margin-top: clamp(2rem,3vw,3rem); margin-bottom: 0; }
 .education-entries article + article { border-top: 1px solid var(--line); }
 .education-entries time { display: block; padding-top: .25rem; color: var(--blue-dark); font: 700 clamp(.85rem,1vw,1rem)/1.3 Arial, sans-serif; letter-spacing: .04em; }
 .education-school-line { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; }
@@ -83,7 +83,8 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .three-notes article { padding: 3rem 3.5rem 4rem; }
 .three-notes article + article { border-left: 1px solid var(--line); }
 .three-notes span { font: 700 .7rem Arial, sans-serif; color: var(--blue-dark); }
-.three-notes h2 { margin: .5rem 0; font-size: 2.7rem; font-weight: 400; }
+.three-notes h2 { margin: .5rem 0; font-size: clamp(1.25rem,1.7vw,1.4rem); font-weight: 400; }
+.three-notes p { margin: .45rem 0 0; font-size: .88rem; }
 
 .project-hero { display: grid; grid-template-columns: 60px minmax(0,1fr) 180px; gap: clamp(1.5rem, 5vw, 5rem); padding: 7vw 0; border-bottom: 1px solid var(--line); }
 .project-number { font: 700 .75rem Arial, sans-serif; color: var(--blue-dark); }
@@ -185,7 +186,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
   .page-title h1 { font-size: clamp(3.25rem,13vw,5.5rem); }
   .about-layout, .project-hero, .project-grid, .skills-layout, .contact-card { grid-template-columns: 1fr; }
   .about-page .inner-page { padding-top: 88px; }
-  .about-layout { padding-top: 2rem; padding-bottom: 1.25rem; }
+  .about-layout { padding-top: 3rem; padding-bottom: 1.25rem; }
   .about-photo { float: none; width: min(100%,560px); margin: -2rem auto 1.5rem; }
   .education-heading { min-height: 42px; padding-right: 0; }
   .education-heading h2 { font-size: clamp(1.4rem,6vw,1.9rem); }
