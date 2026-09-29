@@ -111,7 +111,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .work-label { position: absolute; left: 50%; z-index: 4; isolation: isolate; width: clamp(228px, 18vw, 282px); height: clamp(62px, 4.5vw, 70px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: clamp(.1rem,.18vw,.2rem); padding: .42rem clamp(2rem,2.7vw,2.65rem); transform: translateX(-50%); color: #253d38; letter-spacing: .015em; text-align: center; white-space: nowrap; text-shadow: 0 1px rgba(255,248,222,.75); }
 .work-label::before { content: ""; position: absolute; inset: 0; z-index: -1; border: 18px solid transparent; border-image-source: var(--work-frame); border-image-slice: 28% 23% fill; border-image-width: 18px 38px; border-image-repeat: stretch; opacity: .4; pointer-events: none; }
 .work-label-en { font: italic 600 clamp(1.08rem,1.55vw,1.52rem)/.96 var(--serif); }
-.work-label-zh { font: 400 clamp(.76rem,.92vw,.96rem)/1 "HanziPen SC", "Hannotate SC", "Kaiti SC", "STKaiti", "KaiTi", cursive; letter-spacing: .1em; }
+.work-label-zh { font: 500 clamp(.76rem,.92vw,.96rem)/1.05 "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif; letter-spacing: .12em; }
 .work-choice-film .work-label { top: -7%; --work-frame: url("assets/work-label-frame-blue-v3.png"); }
 .work-choice-design .work-label { top: -12%; --work-frame: url("assets/work-label-frame-violet-v3.png"); }
 .work-choice-animation .work-label { top: -10.5%; --work-frame: url("assets/work-label-frame-iris-v3.png"); }
