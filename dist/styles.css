@@ -55,6 +55,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .about-page { line-height: 1.5; }
 .about-page .inner-page { padding-top: 112px; }
 .about-page-title { padding: 1rem 0 .65rem; border-bottom: 0; }
+.about-page-title > p { font-size: .82rem; }
 .about-layout { max-width: 1160px; padding: clamp(3.5rem,5vw,5rem) 0 clamp(2rem,3vw,3rem); display: flow-root; }
 .about-copy p { margin: 0 0 1rem; font-size: clamp(.98rem,1.25vw,1.08rem); line-height: 1.55; }
 .about-copy p:last-child { margin-bottom: 0; }
@@ -70,11 +71,11 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .education-entries article { display: grid; grid-template-columns: minmax(145px,210px) minmax(0,1fr); gap: clamp(2rem,5vw,5rem); padding: clamp(1.15rem,1.7vw,1.75rem) 0; }
 .three-notes + .image-divider { margin-top: clamp(2rem,3vw,3rem); margin-bottom: 0; }
 .education-entries article + article { border-top: 1px solid var(--line); }
-.education-entries time { display: block; padding-top: .25rem; color: var(--blue-dark); font: 700 clamp(.85rem,1vw,1rem)/1.3 Arial, sans-serif; letter-spacing: .04em; }
+.education-entries time { display: block; padding-top: .25rem; color: var(--blue-dark); font: 700 clamp(.98rem,1.12vw,1.12rem)/1.3 Arial, sans-serif; letter-spacing: .04em; }
 .education-school-line { display: flex; align-items: flex-start; justify-content: space-between; gap: 2rem; }
 .education-entries h3 { margin: 0; font-family: Baskerville, "Iowan Old Style", "Songti SC", Georgia, serif; font-size: clamp(1.25rem,1.75vw,1.85rem); font-weight: 600; line-height: 1.12; letter-spacing: -.01em; }
 .education-entries h3 small { display: block; margin-top: .25rem; font: 400 clamp(1.05rem,1.7vw,1.55rem)/1.15 var(--serif); letter-spacing: 0; }
-.qs-rank { flex: 0 0 auto; margin: .25rem clamp(6rem,14vw,13rem) 0 0; color: var(--blue-dark); font: 700 .72rem/1.3 Arial, sans-serif; letter-spacing: .08em; white-space: nowrap; }
+.qs-rank { flex: 0 0 auto; margin: .25rem clamp(6rem,14vw,13rem) 0 0; color: var(--blue-dark); font: 700 .84rem/1.3 Arial, sans-serif; letter-spacing: .08em; white-space: nowrap; }
 .education-degree { margin: .85rem 0 .4rem; color: var(--ink); font-size: clamp(1.05rem,1.7vw,1.55rem); font-style: normal; }
 .education-detail > p:last-child { margin: 0; font-size: clamp(.95rem,1.25vw,1.08rem); }
 .about-page .education-detail p { line-height: 1.32; }
