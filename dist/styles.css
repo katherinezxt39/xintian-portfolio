@@ -55,7 +55,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .about-page { line-height: 1.5; }
 .about-page .inner-page { padding-top: 112px; }
 .about-page-title { padding: 1rem 0 .65rem; border-bottom: 0; }
-.about-layout { max-width: 1160px; padding: clamp(3.5rem,5vw,5rem) 0 clamp(2rem,3vw,3rem); display: flow-root; }
+.about-layout { max-width: 1160px; padding: clamp(2.25rem,3.5vw,3.5rem) 0 clamp(2rem,3vw,3rem); display: flow-root; }
 .about-copy p { margin: 0 0 1rem; font-size: clamp(.98rem,1.25vw,1.08rem); line-height: 1.55; }
 .about-copy p:last-child { margin-bottom: 0; }
 .project-copy .lead { font-size: clamp(1.35rem, 2.2vw, 2rem); line-height: 1.38; }
@@ -185,7 +185,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
   .page-title h1 { font-size: clamp(3.25rem,13vw,5.5rem); }
   .about-layout, .project-hero, .project-grid, .skills-layout, .contact-card { grid-template-columns: 1fr; }
   .about-page .inner-page { padding-top: 88px; }
-  .about-layout { padding-top: 3rem; padding-bottom: 1.25rem; }
+  .about-layout { padding-top: 2rem; padding-bottom: 1.25rem; }
   .about-photo { float: none; width: min(100%,560px); margin: -2rem auto 1.5rem; }
   .education-heading { min-height: 42px; padding-right: 0; }
   .education-heading h2 { font-size: clamp(1.4rem,6vw,1.9rem); }
