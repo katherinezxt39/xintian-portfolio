@@ -61,17 +61,13 @@
     'assets/trail-mushroom.png',
     'assets/trail-berries.png'
   ];
-  let last = { x: innerWidth / 2, y: innerHeight / 2, t: performance.now() };
+  const trailSpacing = .2 * 96 / 2.54;
+  let last = { x: 0, y: 0, t: performance.now() };
+  let hasPointerPosition = false;
   let distanceBank = 0;
   let imageIndex = 0;
-  let lastSpawn = 0;
 
   function createCard(x, y, speed) {
-    const now = performance.now();
-    const minGap = Math.max(34, 102 - speed * 42);
-    if (now - lastSpawn < minGap) return;
-    lastSpawn = now;
-
     const img = new Image();
     img.className = 'trail-card';
     img.src = images[imageIndex++ % images.length];
@@ -102,16 +98,28 @@
 
   window.addEventListener('pointermove', (event) => {
     const now = performance.now();
+    if (!hasPointerPosition) {
+      last = { x: event.clientX, y: event.clientY, t: now };
+      hasPointerPosition = true;
+      return;
+    }
+
     const dx = event.clientX - last.x;
     const dy = event.clientY - last.y;
     const dt = Math.max(8, now - last.t);
     const distance = Math.hypot(dx, dy);
     const speed = Math.min(2.2, distance / dt * 1.8);
-    distanceBank += distance;
-    const spawnDistance = Math.max(28, 82 - speed * 24);
-    if (distanceBank >= spawnDistance) {
-      createCard(event.clientX, event.clientY, speed);
-      distanceBank %= spawnDistance;
+
+    if (distance > 0) {
+      let nextDistance = trailSpacing - distanceBank;
+      let spawned = 0;
+      while (nextDistance <= distance && spawned < 32) {
+        const ratio = nextDistance / distance;
+        createCard(last.x + dx * ratio, last.y + dy * ratio, speed);
+        nextDistance += trailSpacing;
+        spawned += 1;
+      }
+      distanceBank = (distanceBank + distance) % trailSpacing;
     }
     last = { x: event.clientX, y: event.clientY, t: now };
   }, { passive: true });
