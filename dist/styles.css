@@ -129,11 +129,12 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .category-placeholder { min-height: 32vh; display: grid; place-items: center; border-bottom: 1px solid var(--line); }
 .category-placeholder p { font: italic 1.05rem var(--serif); }
 .graphic-design-page { min-height: 100vh; }
-.graphic-gallery { position: relative; z-index: 1; width: min(1400px, calc(100% - clamp(2rem, 7vw, 8rem))); margin: 0 auto; padding: clamp(112px, 10vw, 150px) 0 clamp(4rem, 8vw, 8rem); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(3.2rem, 6vw, 6.5rem) clamp(2rem, 5vw, 5.5rem); }
+.graphic-gallery { position: relative; z-index: 1; width: min(1400px, calc(100% - clamp(2rem, 7vw, 8rem))); margin: 0 auto; padding: clamp(142px, 12vw, 176px) 0 clamp(4rem, 8vw, 8rem); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(2.7rem, 4.5vw, 4.8rem) clamp(2rem, 5vw, 5.5rem); }
+.graphic-back { position: absolute; top: clamp(98px, 8vw, 118px); left: 0; color: #111; font: 700 .72rem/1 Arial, sans-serif; letter-spacing: .1em; text-decoration: none; }
 .graphic-item { min-width: 0; margin: 0; }
-.graphic-image-stage { width: 100%; height: clamp(360px, 43vw, 660px); display: grid; place-items: center; }
-.graphic-image-stage img { display: block; width: 100%; height: 100%; object-fit: contain; }
-.graphic-item figcaption { margin-top: .8rem; color: #111; font: 500 .84rem/1.5 "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif; letter-spacing: .045em; }
+.graphic-image-stage { width: 100%; height: clamp(320px, 33vw, 500px); display: grid; place-items: end center; }
+.graphic-image-stage img { display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; object-position: center bottom; }
+.graphic-item figcaption { margin-top: .38rem; color: #111; font: 500 .84rem/1.5 "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif; letter-spacing: .045em; }
 .film-page .category-title { padding-bottom: clamp(2rem,4vw,4rem); }
 .film-library { border-top: 1px solid var(--line); }
 .film-group { padding: clamp(2.5rem,4vw,4rem) 0; }
@@ -240,10 +241,13 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
   .film-link-card { grid-template-columns: 34px minmax(0,1fr); gap: .8rem; border-radius: 16px; }
   .film-watch { grid-column: 2; justify-self: start; }
   .animation-page .inner-page { padding-top: 88px; }
-  .graphic-gallery { width: min(100% - 2rem, 720px); padding-top: 96px; grid-template-columns: 1fr; gap: 3.5rem; }
+  .graphic-gallery { width: min(100% - 2rem, 720px); padding-top: 126px; grid-template-columns: 1fr; gap: 3.5rem; }
+  .graphic-back { top: 92px; }
   .graphic-image-stage { height: auto; min-height: 0; }
-  .graphic-image-stage img { height: auto; max-height: 78svh; }
-  .graphic-item figcaption { margin-top: .65rem; font-size: .8rem; }
+  .graphic-image-stage img { width: 100%; height: auto; min-width: 0; min-height: 0; max-height: 78svh; }
+  .graphic-item--portrait .graphic-image-stage { height: min(118vw, 560px); }
+  .graphic-item--portrait .graphic-image-stage img { width: 100%; height: 100%; min-width: 0; min-height: 0; }
+  .graphic-item figcaption { margin-top: .34rem; font-size: .8rem; }
   .big-metric { grid-column: 2; width: 120px; }
   .project-grid article + article, .skills-layout > div + div { border-left: 0; border-top: 1px solid var(--line); }
   .timeline article { grid-template-columns: 1fr; gap: 1rem; }
