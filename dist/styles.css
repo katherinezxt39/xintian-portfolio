@@ -150,6 +150,9 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .timeline time { font: 700 .72rem Arial, sans-serif; color: var(--blue-dark); }
 .timeline h2 { font-size: clamp(2.1rem,3.8vw,4rem); }
 .experience-page .page-title { padding: 2rem 0 2.5rem; border-bottom: 0; }
+.experience-ornament-header { position: relative; min-height: 150px; display: flex; align-items: flex-end; overflow: visible; }
+.experience-top-relief { position: absolute; top: -72px; left: 50%; z-index: 0; width: min(860px,82vw); max-height: 165px; object-fit: contain; transform: translateX(-50%); opacity: .22; mix-blend-mode: multiply; filter: saturate(.34) sepia(.16) drop-shadow(-1px -1px 0 rgba(255,248,214,.86)) drop-shadow(1px 2px 1px rgba(44,82,117,.2)); pointer-events: none; }
+.experience-ornament-header > p { position: relative; z-index: 1; }
 .experience-type small { margin-top: .3rem; color: var(--blue-dark); font-size: .68rem; letter-spacing: .1em; }
 .experience-points { margin: .7rem 0 1rem; padding-left: 1.2rem; font-size: .94rem; }
 .experience-points li { margin: 0 0 .45rem; line-height: 1.6; }
@@ -233,6 +236,8 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
   .big-metric { grid-column: 2; width: 120px; }
   .project-grid article + article, .skills-layout > div + div { border-left: 0; border-top: 1px solid var(--line); }
   .timeline article { grid-template-columns: 1fr; gap: 1rem; }
+  .experience-ornament-header { min-height: 122px; }
+  .experience-top-relief { top: -42px; width: 96vw; max-height: 125px; opacity: .19; }
   .experience-metrics { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; }
   .experience-metrics strong { text-align: left; }
   .skills-layout > div, .skills-layout > div + div { padding: 4rem 0; }
