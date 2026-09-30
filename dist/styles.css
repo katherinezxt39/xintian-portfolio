@@ -146,17 +146,20 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .animation-reel-grid video { display: block; width: 100%; aspect-ratio: 36 / 25; object-fit: cover; background: rgba(255,248,225,.45); }
 
 .timeline { border-top: 1px solid var(--ink); }
-.timeline article { display: grid; grid-template-columns: 170px minmax(0,1fr) 145px; gap: clamp(1.5rem,5vw,5rem); padding: 4rem 0; border-bottom: 1px solid var(--line); }
+.timeline article { display: grid; grid-template-columns: 170px minmax(0,1fr) 145px; gap: clamp(1.5rem,5vw,5rem); padding: 2.75rem 0; border-bottom: 1px solid var(--line); }
 .timeline time { font: 700 .72rem Arial, sans-serif; color: var(--blue-dark); }
 .timeline h2 { font-size: clamp(2.1rem,3.8vw,4rem); }
 .experience-page .page-title { padding: 2rem 0 2.5rem; border-bottom: 0; }
-.experience-points { margin: 1.15rem 0 1.4rem; padding-left: 1.2rem; }
-.experience-points li { margin: 0 0 .7rem; line-height: 1.75; }
+.experience-points { margin: .7rem 0 1rem; padding-left: 1.2rem; font-size: .94rem; }
+.experience-points li { margin: 0 0 .45rem; line-height: 1.6; }
 .experience-metrics { align-self: center; display: grid; gap: 1.35rem; }
 .experience-metrics strong { text-align: center; color: var(--blue-dark); font: 400 2.4rem var(--serif); }
 .timeline small { display: block; color: var(--ink); font: 700 .68rem Arial, sans-serif; letter-spacing: .08em; }
 
 .skills-layout { display: grid; grid-template-columns: 1.05fr .95fr; border-bottom: 1px solid var(--line); }
+.skills-page .page-title { padding: 2rem 0 2.5rem; }
+.skills-layout-single { grid-template-columns: 1fr; }
+.skills-layout.skills-layout-single > div { padding-right: 0; }
 .skills-layout > div { padding: 6vw 4vw 6vw 0; }
 .skills-layout > div + div { padding-left: 4vw; border-left: 1px solid var(--line); }
 .skills-layout > div > h2 { margin-bottom: 3rem; }
