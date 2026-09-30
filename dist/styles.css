@@ -191,6 +191,11 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .contact-card { margin-top: 7vw; padding: clamp(3rem,6vw,6rem); background: rgba(44,82,117,.94); color: #fff8e8; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 3rem; }
 .contact-card h2 { margin: .1em 0; font-size: clamp(3.5rem,7vw,7.5rem); font-weight: 400; line-height: .9; }
 .contact-card > div:last-child { display: flex; flex-direction: column; align-items: flex-end; gap: .6rem; }
+.skills-contact { padding: clamp(1.4rem,2.6vw,2.4rem); display: block; background: rgba(255,248,224,.38); color: rgba(34,48,42,.82); border: 1px solid rgba(44,82,117,.12); }
+.skills-contact p { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: .42rem .7rem; font-size: clamp(.9rem,1.2vw,1.05rem); }
+.skills-contact strong { color: rgba(44,82,117,.74); font: 700 .76em Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+.skills-contact a { color: inherit; text-underline-offset: 4px; text-decoration-color: rgba(44,82,117,.28); }
+.skills-contact span { color: rgba(44,82,117,.36); }
 
 .mini-footer { width: min(1280px,90vw); margin: 0 auto; padding: 35px 0 50px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; font: 700 .7rem Arial, sans-serif; letter-spacing: .12em; text-transform: uppercase; }
 .mini-footer a { text-underline-offset: 6px; }
