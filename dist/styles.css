@@ -134,7 +134,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .graphic-item { min-width: 0; margin: 0; }
 .graphic-image-stage { width: 100%; height: clamp(320px, 33vw, 500px); display: grid; place-items: end center; }
 .graphic-image-stage img { display: block; width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; object-position: center bottom; }
-.graphic-item figcaption { margin-top: .38rem; color: #111; font: 500 .84rem/1.5 "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif; letter-spacing: .045em; }
+.graphic-item figcaption { margin-top: .38rem; color: #111; font: 500 .84rem/1.5 "Songti SC", "STSong", "Noto Serif CJK SC", Georgia, serif; letter-spacing: .045em; text-align: center; }
 .film-page .category-title { padding-bottom: clamp(2rem,4vw,4rem); }
 .film-library { border-top: 1px solid var(--line); }
 .film-group { padding: clamp(2.5rem,4vw,4rem) 0; }
