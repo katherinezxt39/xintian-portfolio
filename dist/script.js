@@ -61,7 +61,7 @@
     'assets/trail-mushroom.png',
     'assets/trail-berries.png'
   ];
-  const trailSpacing = .2 * 96 / 2.54;
+  const trailSpacing = .4 * 96 / 2.54;
   let last = { x: 0, y: 0, t: performance.now() };
   let hasPointerPosition = false;
   let distanceBank = 0;

@@ -172,6 +172,9 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 
 .skills-layout { display: grid; grid-template-columns: 1.05fr .95fr; border-bottom: 1px solid var(--line); }
 .skills-page .page-title { padding: 2rem 0 1.25rem; border-bottom: 0; }
+.skills-ornament-header { position: relative; overflow: visible; }
+.skills-ornament-header > p { position: relative; z-index: 1; }
+.skills-top-relief { opacity: .12; filter: saturate(.2) sepia(.12) drop-shadow(-1px -1px 0 rgba(255,248,214,.72)) drop-shadow(1px 2px 1px rgba(44,82,117,.12)); }
 .skills-layout-single { grid-template-columns: 1fr; }
 .skills-layout.skills-layout-single > div { padding-right: 0; }
 .skills-layout > div { padding: 3vw 4vw 6vw 0; }
