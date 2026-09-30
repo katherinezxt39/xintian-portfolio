@@ -193,8 +193,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .contact-card > div:last-child { display: flex; flex-direction: column; align-items: flex-end; gap: .6rem; }
 .skills-contact-invite { margin: clamp(3.5rem,7vw,7rem) 0 1rem; text-align: center; color: rgba(34,48,42,.76); font: 400 clamp(1.1rem,1.8vw,1.55rem)/1.35 var(--serif); }
 .skills-contact { margin-top: 0; padding: clamp(1.4rem,2.6vw,2.4rem); display: block; background: rgba(255,248,224,.38); color: rgba(34,48,42,.82); border: 1px solid rgba(44,82,117,.12); }
-.skills-contact p { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: .42rem .7rem; font-size: clamp(1rem,1.35vw,1.18rem); }
-.skills-contact strong { color: rgba(44,82,117,.74); font: 700 .76em Arial, sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+.skills-contact p { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; text-align: center; gap: .42rem .7rem; font-size: clamp(1rem,1.35vw,1.18rem); }
 .skills-contact a { color: inherit; text-underline-offset: 4px; text-decoration-color: rgba(44,82,117,.28); }
 .skills-contact span { color: rgba(44,82,117,.36); }
 
