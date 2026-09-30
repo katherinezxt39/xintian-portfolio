@@ -171,12 +171,12 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .timeline small { display: block; color: var(--ink); font: 700 .68rem Arial, sans-serif; letter-spacing: .08em; }
 
 .skills-layout { display: grid; grid-template-columns: 1.05fr .95fr; border-bottom: 1px solid var(--line); }
-.skills-page .page-title { padding: 2rem 0 2.5rem; }
+.skills-page .page-title { padding: 2rem 0 2.5rem; border-bottom: 0; }
 .skills-layout-single { grid-template-columns: 1fr; }
 .skills-layout.skills-layout-single > div { padding-right: 0; }
 .skills-layout > div { padding: 6vw 4vw 6vw 0; }
 .skills-layout > div + div { padding-left: 4vw; border-left: 1px solid var(--line); }
-.skills-layout > div > h2 { margin-bottom: 3rem; }
+.skills-layout > div > h2 { margin-bottom: 3rem; font-size: clamp(1.8rem,3.33vw,3.67rem); }
 .education-list article { display: grid; grid-template-columns: 110px 1fr; gap: 1.5rem; padding: 2rem 0; border-top: 1px solid var(--line); }
 .education-list time { font: 700 .7rem Arial, sans-serif; color: var(--blue-dark); }
 .education-list h3 { margin: 0; font-size: 1.45rem; }

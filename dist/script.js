@@ -75,8 +75,8 @@
     garden.appendChild(img);
 
     const side = Math.random() > .5 ? 1 : -1;
-    const offsetX = side * (20 + Math.random() * 40);
-    const offsetY = -18 + Math.random() * 36;
+    const offsetX = (Math.random() - .5) * 12;
+    const offsetY = (Math.random() - .5) * 10;
     const driftX = side * (18 + Math.random() * 38) + (Math.random() - .5) * speed * 18;
     const driftY = -18 - Math.random() * 48;
     const startRotation = -8 + Math.random() * 16;
