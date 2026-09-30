@@ -58,6 +58,7 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .about-page-title > p { font-size: .82rem; }
 .about-layout { max-width: 1160px; padding: clamp(3.5rem,5vw,5rem) 0 clamp(2rem,3vw,3rem); display: flow-root; }
 .about-copy p { margin: 0 0 1rem; font-size: clamp(.98rem,1.25vw,1.08rem); line-height: 1.55; }
+.about-name { color: #111; font-weight: 700; }
 .about-copy p:last-child { margin-bottom: 0; }
 .project-copy .lead { font-size: clamp(1.35rem, 2.2vw, 2rem); line-height: 1.38; }
 .about-photo { position: relative; float: right; width: min(43%,500px); margin: clamp(-4rem,-4vw,-2rem) 0 .6rem clamp(2.5rem,5vw,5rem); padding: clamp(.45rem,.8vw,.7rem); border: 1px solid rgba(38,63,55,.34); background: rgba(255,248,225,.42); box-shadow: 0 18px 38px rgba(77,58,25,.13); rotate: 1.2deg; }
