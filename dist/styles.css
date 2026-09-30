@@ -150,13 +150,12 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
 .timeline time { font: 700 .72rem Arial, sans-serif; color: var(--blue-dark); }
 .timeline h2 { font-size: clamp(2.1rem,3.8vw,4rem); }
 .experience-page .page-title { padding: 2rem 0 2.5rem; border-bottom: 0; }
-.experience-page-title { position: relative; min-height: clamp(190px,19vw,260px); display: flex; align-items: center; }
-.experience-camera-woman { position: absolute; right: clamp(1rem,8vw,8rem); bottom: 0; z-index: 1; display: block; height: clamp(185px,18vw,250px); width: auto; filter: drop-shadow(0 9px 10px rgba(38,63,55,.14)); }
-.experience-page-title > p { position: relative; z-index: 2; }
+.experience-type small { margin-top: .3rem; color: var(--blue-dark); font-size: .68rem; letter-spacing: .1em; }
 .experience-points { margin: .7rem 0 1rem; padding-left: 1.2rem; font-size: .94rem; }
 .experience-points li { margin: 0 0 .45rem; line-height: 1.6; }
 .experience-metrics { align-self: center; display: grid; gap: 1.35rem; }
 .experience-metrics strong { text-align: center; color: var(--blue-dark); font: 400 2.4rem var(--serif); }
+.experience-divider { margin-top: clamp(2rem,3vw,3rem); margin-bottom: 0; }
 .timeline small { display: block; color: var(--ink); font: 700 .68rem Arial, sans-serif; letter-spacing: .08em; }
 
 .skills-layout { display: grid; grid-template-columns: 1.05fr .95fr; border-bottom: 1px solid var(--line); }
@@ -234,8 +233,6 @@ nav a:hover::after, nav a:focus-visible::after, nav a.active::after { right: 0; 
   .big-metric { grid-column: 2; width: 120px; }
   .project-grid article + article, .skills-layout > div + div { border-left: 0; border-top: 1px solid var(--line); }
   .timeline article { grid-template-columns: 1fr; gap: 1rem; }
-  .experience-page-title { min-height: 180px; }
-  .experience-camera-woman { right: 0; height: 175px; }
   .experience-metrics { display: flex; flex-wrap: wrap; gap: 1.5rem 2.5rem; }
   .experience-metrics strong { text-align: left; }
   .skills-layout > div, .skills-layout > div + div { padding: 4rem 0; }
